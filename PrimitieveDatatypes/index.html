@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Markdown - Geonovum Werkwijze</title>
+        <title>UML - Geonovum Werkwijze</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -49,8 +49,8 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Markdown</a>
+                            <li class="navitem">
+                                <a href="../03-Markdown/" class="nav-link">Markdown</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ReSpec <b class="caret"></b></a>
@@ -68,8 +68,8 @@
                             <li class="navitem">
                                 <a href="../07-Subversion/" class="nav-link">Subversion</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../PrimitieveDatatypes/" class="nav-link">UML</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">UML</a>
                             </li>
                             <li class="navitem">
                                 <a href="../GML/" class="nav-link">GML</a>
@@ -83,17 +83,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../02-GitHub/" class="nav-link">
+                                <a rel="prev" href="../07-Subversion/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../04-ReSpec/" class="nav-link">
+                                <a rel="next" href="../GML/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/Geonovum/handleiding-GitHub/blob/main/docs/03-Markdown.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/Geonovum/handleiding-GitHub/blob/main/docs/PrimitieveDatatypes.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -113,13 +113,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#markdown" class="nav-link">Markdown</a>
+            <li class="nav-item" data-level="1"><a href="#primitieve-datatypes" class="nav-link">Primitieve Datatypes</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#werken-met-markdown-in-visual-code" class="nav-link">Werken met Markdown in Visual Code</a>
+            <li class="nav-item" data-level="2"><a href="#geometrie-datatypes" class="nav-link">Geometrie datatypes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#werken-met-markdown-in-notepad" class="nav-link">Werken met Markdown in Notepad++</a>
+            <li class="nav-item" data-level="2"><a href="#mim-datatypes" class="nav-link">MIM datatypes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#geonovum-datatypes" class="nav-link">Geonovum datatypes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -130,21 +134,22 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="markdown">Markdown</h1>
-<p>Voor het extern publiceren van documenten en standaarden gebruiken we “ReSpec”. ReSpec werkt met HTML en Javascript. Dat is niet voor iedereen de meest voor de hand liggende documentatie tooling. Gelukkig ondersteunt ReSpec ook het gebruik van Markdown</p>
-<p><a href="https://nl.wikipedia.org/wiki/Markdown">Markdown</a> is een lichtgewicht opmaaktaal op basis van platte tekst die zodanig ontworpen is dat het gemakkelijk valt te converteren naar HTML en andere formaten middels een applicatie met dezelfde naam. Markdown wordt vaak gebruikt voor de opmaak van project documentatie (README-bestanden), eenvoudige CMS-systemen en berichten in online fora. Tekst in deze opmaaktaal is gemakkelijk te maken met een simpele teksteditor.</p>
-<p>Het ontwerpdoel van de taal is leesbaarheid. Teksten geschreven met behulp van Markdown worden geacht al leesbaar te zijn voordat opmaak is toegepast op de tekst. Opmaakinstructies en tags zijn dan ook niet te vinden in pure Markdown.</p>
-<p>Resources:</p>
+<h1 id="primitieve-datatypes">Primitieve Datatypes</h1>
+<p>In verschillende informatiemodellen worden verschillende primitieve datatypes gebruikt. Ik probeer te inventariseren welke waar gebruikt worden zodat we ook naar 1 mapping naar XSD kunnen.</p>
+<p>In: svn.geostandaarden.nl/Datatypes heb ik een lijst met primitieve datatypes gemaakt. IMGeluid maakt van deze lijst gebruik.</p>
+<p>Deze lijst is al volgt tot stand gekomen:</p>
 <ul>
-<li><a href="https://www.markdownguide.org/getting-started/">Markdown Tutorial</a></li>
-<li><a href="https://www.markdownguide.org/basic-syntax">Markdown Reference</a></li>
+<li>Als eerste heb ik de primitieve types uit MIM 1.1 gepakt </li>
+<li>Daar heb ik de primitieve types uit de ISO 19100 serie toegevoegd. Een overzicht hiervan is te vinden in Table D.2 van de GML3.2.2 standaard. Ik heb nog niet de hele lijst toegevoegd.</li>
+<li>Daarna heb ik nog een los datatype wat in IMGeluid gevraagd was toegevoegd.</li>
 </ul>
-<h2 id="werken-met-markdown-in-visual-code">Werken met Markdown in Visual Code</h2>
-<p>Een optie om de Markdown bestanden te editen is het gebruiken van Visual Studio Code. Dit is een editor die eigenlijk voor het schrijven van software is, maar ook heel goed te gebruiken als teksteditor. Het voordeel is dat je alle bestanden die bij je ReSpec omgeving horen, in één editor ziet staan, en kan aanpassen. Het biedt je meer overzicht dan werken in Word.</p>
-<p>Een voordeel van het werken met Micosoft Visual Studio is dat het mooi integreert met de GitHub Desktop Client, zo kan je meteen de editor opstarten vanuit de client, en kan je conflicten bij het committen van versies mooi oplossen. Als je alleen maar content wil editen, biedt Microsoft Word met de Markdown plugin voldoende functionaliteit.</p>
-<p>Vooral het maken van Markdown tabellen in een tekst editor kan vervelend zijn. in Een handige online tool om tabellen naar Markdown te converteren is <a href='https://www.tablesgenerator.com/markdown_tables' target='_blank'>https://www.tablesgenerator.com/markdown_tables</a>.  Ook is er een handige plugin om Visual Code tabellen te bewerken: <a href="https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable">Markdown Table</a></p>
-<h2 id="werken-met-markdown-in-notepad">Werken met Markdown in Notepad++</h2>
-<p>Deze teksteditor is gratis te downloaden en heeft meer functionaliteit dan notepad/ kladblok/ wordpad en geeft visueel (in kleuren) ondersteuning in de code en bij fouten daarin. </p></div>
+<p>Drie lijsten met datatypes:</p>
+<h2 id="geometrie-datatypes">Geometrie datatypes</h2>
+<p><img alt="Geometrie" src="../media/GML-geometrie.png" /></p>
+<h2 id="mim-datatypes">MIM datatypes</h2>
+<p><img alt="MIM" src="../media/MIM11.png" /></p>
+<h2 id="geonovum-datatypes">Geonovum datatypes</h2>
+<p><img alt="Geonovum datatypes" src="../media/Geonovum-algemeen.png" /></p></div>
             </div>
         </div>
 
