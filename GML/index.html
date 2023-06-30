@@ -119,6 +119,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#namespaces-in-door-geonovum-beheerde-schemas" class="nav-link">Namespaces in door Geonovum beheerde schema's</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -129,11 +133,104 @@
 <h1 id="gml-en-xsd">GML en XSD</h1>
 <p>Zie hiervoor: <a href="https://geonovum.github.io/gimeg/">Geometrie in model en GML</a></p>
 <h2 id="xsd-en-namespaces">XSD en Namespaces</h2>
-<p>Bij een XML applicatie schema (dus ook voor GML schema's) hoort een namespace. In veel gevallen genereert Imvertor deze namespace.</p>
-<p><strong>Note: TODO</strong></p>
-<blockquote>
-<p>Dit moet nog ingevuld.</p>
-</blockquote></div>
+<p>Bij een XML applicatie schema (dus ook voor GML schema's) wordt vaak een namespace gebruikt. Deze namespace hoort vaak bij een domein en het is de bedoel dat de combinatie van de namespace  en het element uniek is. Dit kan alleen als de namespace, die de vorm van een URI heeft uniek is. Door een URI te kiezen die bij jou onder beheer is weet je zeker dat de combinatie uniek is. In de volgende paragraaf zie je een lijste gebruikte namespaces. Hieronder wat richtlijnen.</p>
+<ul>
+<li>Voor de basis wordt: http://www.geostandaarden.nl gebruikt.  Het is nog even de vraag of we niet op https moeten overstappen. Dat doen we niet want niemand anders doet deze overstap.</li>
+<li>Daarna volgt een identificatie van de standaard. </li>
+<li>Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.</li>
+</ul>
+<p>De volgende model onderdelen wordt gebruikt bij het maken construeren van schemas:
+ - Een schema heeft een X.Y.Z versienummer
+ - Een schema hoort bij een standaard met een [standaard]
+ - Een schema heeft een onderdeel [onderdeel]</p>
+<p>namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
+locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
+vesion in het schema: x.y.z</p>
+<p>Bij een standaard zonder onderdelen wordt de bestandsnaam als onderdeelnaam gebruikt bij locatie.</p>
+<h2 id="namespaces-in-door-geonovum-beheerde-schemas">Namespaces in door Geonovum beheerde schema's</h2>
+<p>GML applicatieschema's zijn te vinden op: https://register.geostandaarden.nl/gmlapplicatieschema/</p>
+<p>Een korte inventarisatie levert:</p>
+<table>
+<thead>
+<tr>
+<th>standaard</th>
+<th>versie</th>
+<th>namespace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basisgeometrie</td>
+<td>1.0.0</td>
+<td>http://www.geostandaarden.nl/basisgeometrie/1.0</td>
+</tr>
+<tr>
+<td>basisgeometrie</td>
+<td>v20190901</td>
+<td>http://www.geostandaarden.nl/basisgeometrie/v20190901</td>
+</tr>
+<tr>
+<td>brt-algemeen</td>
+<td>1.2.0</td>
+<td>http://register.geostandaarden.nl/gmlapplicatieschema/brt-algemeen/1.2.0</td>
+</tr>
+<tr>
+<td>imaer</td>
+<td>5.1.1</td>
+<td>http://imaer.aerius.nl/5.1</td>
+</tr>
+<tr>
+<td>img</td>
+<td>3.0.0</td>
+<td>http://www.geluidgegevens.nl/IMGeluid/3.0</td>
+</tr>
+<tr>
+<td>imgeo (simple)</td>
+<td>2.1.1</td>
+<td>http://www.geostandaarden.nl/imgeo/2.1/simple/gml31</td>
+</tr>
+<tr>
+<td>imgeo</td>
+<td>2.1.1</td>
+<td>http://www.geostandaarden.nl/imgeo/2.1</td>
+</tr>
+<tr>
+<td>imkl (wibon)</td>
+<td>2.0.0</td>
+<td>http://www.geostandaarden.nl/imkl/wibon</td>
+</tr>
+<tr>
+<td>imkl (wibonbr)</td>
+<td>2.0.0</td>
+<td>http://www.geostandaarden.nl/imkl/wibonbr</td>
+</tr>
+<tr>
+<td>imkl2015 (wionbr)</td>
+<td>1.2</td>
+<td>http://www.geostandaarden.nl/imkl/2015/wionbr/1.2</td>
+</tr>
+<tr>
+<td>imkl2015 (wionbr)</td>
+<td>1.2.1</td>
+<td>http://www.geostandaarden.nl/imkl/2015/wionbr/1.2</td>
+</tr>
+<tr>
+<td>top10nl</td>
+<td>1.1.1</td>
+<td>http://www.kadaster.nl/schemas/top10nl/v20120116</td>
+</tr>
+<tr>
+<td>top10nl</td>
+<td>1.2.0</td>
+<td>http://register.geostandaarden.nl/gmlapplicatieschema/top10nl/1.2.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 
