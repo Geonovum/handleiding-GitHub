@@ -139,13 +139,18 @@
 <li>Daarna volgt een identificatie van de standaard. </li>
 <li>Een versienummer volgens semver X.Y. Een Z-versie is niet nodig omdat alle Z-versies backwards compatible zijn en je dus nooit meer dan 1 versie gebruikt.</li>
 </ul>
-<p>De volgende model onderdelen wordt gebruikt bij het maken construeren van schemas:
- - Een schema heeft een X.Y.Z versienummer
- - Een schema hoort bij een standaard met een [standaard]
- - Een schema heeft een onderdeel [onderdeel]</p>
-<p>namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y
-locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd
-vesion in het schema: x.y.z</p>
+<p>De volgende model onderdelen wordt gebruikt bij het maken construeren van schemas:</p>
+<ul>
+<li>Een schema heeft een [X.Y.Z] versienummer</li>
+<li>Een schema hoort bij een standaard met een [standaard]</li>
+<li>Een schema heeft een onderdeel [onderdeel]</li>
+</ul>
+<p>Samen wordt dit:</p>
+<ul>
+<li>namespace van schema: http://www.geostandaarden.nl/[standaard]/[onderdeel]/x.y</li>
+<li>locatie van schema: https://register.geostanadaarden.nl/xmlschema/[standaard]/[x.y.z]/[onderdeel].xsd</li>
+<li>vesion in het schema: [x.y.z]</li>
+</ul>
 <p>Bij een standaard zonder onderdelen wordt de bestandsnaam als onderdeelnaam gebruikt bij locatie.</p>
 <h2 id="namespaces-in-door-geonovum-beheerde-schemas">Namespaces in door Geonovum beheerde schema's</h2>
 <p>GML applicatieschema's zijn te vinden op: https://register.geostandaarden.nl/gmlapplicatieschema/</p>
