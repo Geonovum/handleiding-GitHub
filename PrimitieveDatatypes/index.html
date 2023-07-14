@@ -66,7 +66,7 @@
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../07-Subversion/" class="nav-link">Subversion</a>
+                                <a href="../07-Subversion/" class="nav-link">SVN</a>
                             </li>
                             <li class="navitem active">
                                 <a href="./" class="nav-link">UML</a>
@@ -135,20 +135,22 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="primitieve-datatypes">Primitieve Datatypes</h1>
-<p>In verschillende informatiemodellen worden verschillende primitieve datatypes gebruikt. Ik probeer te inventariseren welke waar gebruikt worden zodat we ook naar 1 mapping naar XSD kunnen.</p>
-<p>In: svn.geostandaarden.nl/Datatypes heb ik een lijst met primitieve datatypes gemaakt. IMGeluid maakt van deze lijst gebruik.</p>
-<p>Deze lijst is al volgt tot stand gekomen:</p>
+<p>UML modellen maken gebruik van primitive datatypes zoals bijvoorbeeld gedefinieerd in het <a href="https://docs.geostandaarden.nl/mim/mim/#datatypen">MIM</a>. 
+In: svn.geostandaarden.nl/Datatypes zijn drie collecties met primitieve types opgenomen die alle primitieve types bevat die in Geonovum UML modellen gebruikt zijn. De volgende collecties zijn er:</p>
 <ul>
-<li>Als eerste heb ik de primitieve types uit MIM 1.1 gepakt </li>
-<li>Daar heb ik de primitieve types uit de ISO 19100 serie toegevoegd. Een overzicht hiervan is te vinden in Table D.2 van de GML3.2.2 standaard. Ik heb nog niet de hele lijst toegevoegd.</li>
-<li>Daarna heb ik nog een los datatype wat in IMGeluid gevraagd was toegevoegd.</li>
+<li>De primtieve types genoend in <a href="https://docs.geostandaarden.nl/mim/mim/#datatypen">MIM</a></li>
+<li>De geometrietypes genoemd in <a href="https://docs.geostandaarden.nl/nen3610/gimeg/">ISO19107</a></li>
+<li>Overige datatypes die niet in de twee lijstjes hieronder vallen</li>
 </ul>
-<p>Drie lijsten met datatypes:</p>
+<p>Deze packages zijn in beheer bij @wilkoquak.  Het is de bedoeling dat er in [Imvertor] een mapping komt die precies overeenkomt het deze drie collecties types</p>
 <h2 id="geometrie-datatypes">Geometrie datatypes</h2>
+<p>In dit package zitten de geometrische datatypes zoals genoemd in <a href="https://www.iso.org/standard/26012.html">ISO19107:2003</a>.</p>
 <p><img alt="Geometrie" src="../media/GML-geometrie.png" /></p>
 <h2 id="mim-datatypes">MIM datatypes</h2>
+<p>In dit package zitten de geometrische datatypes zoals genoemd in <a href="https://docs.geostandaarden.nl/mim/mim/#datatypen">MIM</a>.</p>
 <p><img alt="MIM" src="../media/MIM11.png" /></p>
 <h2 id="geonovum-datatypes">Geonovum datatypes</h2>
+<p>In dit package zitten datatypes die niet in de twee eerdergenoemde packages vallen maar wel ergens gebruikt zijn bij Geonovum.</p>
 <p><img alt="Geonovum datatypes" src="../media/Geonovum-algemeen.png" /></p></div>
             </div>
         </div>
