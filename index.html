@@ -33,40 +33,40 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GitHub <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="06-InleidingGithub/" class="dropdown-item">GitHub Intro</a>
+    <a href="GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
 </li>
                                     
 <li>
-    <a href="02-GitHub/" class="dropdown-item">Manual</a>
+    <a href="GitHub/" class="dropdown-item">Manual</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="03-Markdown/" class="nav-link">Markdown</a>
+                                <a href="Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="Markdown/" class="nav-link">Markdown</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ReSpec <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="04-ReSpec/" class="dropdown-item">Manual</a>
+    <a href="ReSpec/" class="dropdown-item">Manual</a>
 </li>
                                     
 <li>
-    <a href="05-Checklists/" class="dropdown-item">Checklists</a>
+    <a href="ReSpec-Checklists/" class="dropdown-item">Checklists</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="07-Subversion/" class="nav-link">SVN</a>
+                                <a href="Subversion/" class="nav-link">SVN</a>
                             </li>
                             <li class="navitem">
                                 <a href="PrimitieveDatatypes/" class="nav-link">UML</a>
@@ -82,16 +82,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="06-InleidingGithub/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 <a href="https://github.com/Geonovum/handleiding-GitHub/blob/main/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
@@ -143,6 +133,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#uitleg-mkdocs" class="nav-link">Uitleg MkDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -151,28 +145,32 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="welkom">Welkom</h1>
-<p>Welkom bij de helppagina's waarin de Geonovum Werkwijze beschreven is. Dit is niet een formele beschrijving van de werkwijze maar maar meer een hulpmiddel om stap voor stap de tooling uit te leggen. Binnen Geonovum maken we gebruik van de volgende tools:</p>
+<p>Welkom bij de helppagina's waarin de Geonovum Werkwijze beschreven is. Dit is niet een formele beschrijving van de werkwijze maar maar meer een hulpmiddel om stap voor stap de tooling uit te leggen.</p>
+<p>Om de standaarden die in beheer zijn bij Geonovum te kunnen beheren, wordt gebruik gemaakt van verschillende tooling. Documenten die behoren bij de standaarden worden gepubliceerd op https://docs.geostandaarden.nl als HTML bestanden, deze HTML bestanden worden aangemaakt met een tool van W3C: ReSpec. </p>
+<p>ReSpec maakt gebruik van input bestanden om de HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in een formaat: Markdown. Deze Markdown bestanden kunnen worden aangemaakt met text editor zoals Visual Studio van Microsoft of Notepad++. Visual Studio heeft het voordeel dat de editor mooi integreert met de Github Desktop Client. GitHub tenslotte wordt gebruikt als de “repository”, waarin alle bestanden die bij een standaard horen, komen te staan.</p>
+<p>Deze handleiding beschrijft hoe je een GitHub Account maakt, hoe je GitHub Desktop Client installeert en gebruikt, hoe je een Respec mappenstructuur opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je de Markdown plugin in Microsoft Word installeert en gebruikt.</p>
+<p>Binnen Geonovum maken we gebruik van de volgende tools:</p>
 <h2 id="github">GitHub</h2>
 <ul>
-<li><a href="02-GitHub/">GitHub handleiding</a>: Beschrijft hoe je een account aanmaakt en je beheertaken uitvoert.</li>
-<li><a href="06-InleidingGithub/">GitHub werkwijze</a>: Meer algemene inleiding over GitHub.</li>
+<li><a href="GitHub/">GitHub handleiding</a>: Beschrijft hoe je een account aanmaakt en je beheertaken uitvoert.</li>
+<li><a href="GitHub-Inleiding/">GitHub werkwijze</a>: Meer algemene inleiding over GitHub.</li>
 </ul>
 <h2 id="respec">ReSpec</h2>
 <ul>
-<li><a href="04-ReSpec/">Respec handleiding</a>: Algemene handleiding.</li>
-<li><a href="05-Checklists/">Respec checklist</a>: Checklist van handeling bij het publiceren van een standaard middels ReSpec.</li>
+<li><a href="ReSpec/">Respec handleiding</a>: Algemene handleiding.</li>
+<li><a href="ReSpec-Checklists/">Respec checklist</a>: Checklist van handeling bij het publiceren van een standaard middels ReSpec.</li>
 </ul>
 <h2 id="markdown">Markdown</h2>
 <ul>
-<li><a href="03-Markdown/">Markdown handleiding</a></li>
+<li><a href="Markdown/">Markdown handleiding</a></li>
 </ul>
 <h2 id="subversion">Subversion</h2>
 <ul>
-<li><a href="07-Subversion/">Subversion instructies</a></li>
+<li><a href="Subversion/">Subversion instructies</a></li>
 </ul>
 <h2 id="imvertor">Imvertor</h2>
 <ul>
-<li><a href="Imvertor.md">Imvertor</a></li>
+<li><a href="Imvertor/">Imvertor</a></li>
 </ul>
 <h2 id="gml">GML</h2>
 <ul>
@@ -181,7 +179,18 @@
 <h2 id="enterprise-architect">Enterprise Architect</h2>
 <ul>
 <li><a href="PrimitieveDatatypes/">Primitieve datatypes</a></li>
-</ul></div>
+</ul>
+<h2 id="uitleg-mkdocs">Uitleg MkDocs</h2>
+<p><a href="https://www.mkdocs.org/">MkDocs</a> is een lichtgewicht tool die een collectie Markdown documenten omzet in een navigeerbare handleiding. Omdat we er bij Geonovum nog niet uit zijn hoe we documentatie gaan behren is MkDocs een eenvoudige manier om de bestaande documentatie te ontsluiten. In de menubalk aan de bovenkant zie je de verschillende onderwerpen die in deze documentatie behandeld worden. Van sommige van die onderwerpen zijn nog subonderwerpen beschreven. Kies een onderwerp en in de linkermenubalk verschijnt een hoofdstukindeling. Ook is er zoekfunctie.</p>
+<h3 id="bijhouden">Bijhouden</h3>
+<p>Deze handleiding is als HTML gepubliceerd op: de <a href="https://geonovum.github.io/handleiding-tooling/">GitHub</a> paginas van Geonovum. Om deze up to date te houden kun je in een linux omgeving in de root folder van het repository het commando</p>
+<pre><code>mkdocs gh-deploy
+</code></pre>
+<p>hiervoor heb je wel een github token nodig en de juiste packages. </p>
+<blockquote>
+<p>TODO: Hier een GitHub action van maken
+</p>
+</blockquote></div>
             </div>
         </div>
 
@@ -262,5 +271,5 @@
 
 <!--
 MkDocs version : 1.4.3
-Build Date UTC : 2023-07-14 12:57:45.559311+00:00
+Build Date UTC : 2023-07-14 14:25:26.196923+00:00
 -->

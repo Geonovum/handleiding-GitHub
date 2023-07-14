@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Inleiding - Geonovum Werkwijze</title>
+        <title>SVN - Geonovum Werkwijze</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -33,40 +33,40 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
-                            </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GitHub <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../06-InleidingGithub/" class="dropdown-item">GitHub Intro</a>
+    <a href="../GitHub-Inleiding/" class="dropdown-item">GitHub Intro</a>
 </li>
                                     
 <li>
-    <a href="../02-GitHub/" class="dropdown-item">Manual</a>
+    <a href="../GitHub/" class="dropdown-item">Manual</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../03-Markdown/" class="nav-link">Markdown</a>
+                                <a href="../Imvertor/" class="nav-link">Imvertor</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ReSpec <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../04-ReSpec/" class="dropdown-item">Manual</a>
+    <a href="../ReSpec/" class="dropdown-item">Manual</a>
 </li>
                                     
 <li>
-    <a href="../05-Checklists/" class="dropdown-item">Checklists</a>
+    <a href="../ReSpec-Checklists/" class="dropdown-item">Checklists</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem">
-                                <a href="../07-Subversion/" class="nav-link">SVN</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">SVN</a>
                             </li>
                             <li class="navitem">
                                 <a href="../PrimitieveDatatypes/" class="nav-link">UML</a>
@@ -83,7 +83,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/Geonovum/handleiding-GitHub/blob/main/docs/01-Inleiding.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a rel="prev" href="../ReSpec-Checklists/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../PrimitieveDatatypes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Geonovum/handleiding-GitHub/blob/main/docs/Subversion.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -103,17 +113,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#inleiding" class="nav-link">Inleiding</a>
+            <li class="nav-item" data-level="1"><a href="#subversion" class="nav-link">Subversion</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#aanleiding" class="nav-link">Aanleiding</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#leeswijzer" class="nav-link">Leeswijzer</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#bijhouden" class="nav-link">Bijhouden</a>
+            <li class="nav-item" data-level="2"><a href="#installeren-van-subversion-in-enterprise-architect" class="nav-link">Installeren van Subversion in Enterprise Architect</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -124,18 +126,63 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="inleiding">Inleiding</h1>
-<p>Dit document bevat een beschrijving van de Geonovum werkwijze en ook een handleiding behorend bij die werkwijze.</p>
-<h2 id="aanleiding">Aanleiding</h2>
-<p>Om de standaarden die in beheer zijn bij Geonovum te kunnen beheren, wordt gebruik gemaakt van verschillende tooling. Documenten die behoren bij de standaarden worden gepubliceerd op https://docs.geostandaarden.nl als HTML bestanden, deze HTML bestanden worden aangemaakt met een tool van W3C: ReSpec. </p>
-<p>ReSpec maakt gebruik van input bestanden om de HTML te genereren. Deze inputbestanden (de content) wordt gemaakt in een formaat: Markdown. Deze Markdown bestanden kunnen worden aangemaakt met text editor zoals Visual Studio van Microsoft of Notepad++. Visual Studio heeft het voordeel dat de editor mooi integreert met de Github Desktop Client. GitHub tenslotte wordt gebruikt als de “repository”, waarin alle bestanden die bij een standaard horen, komen te staan.</p>
-<p>Deze handleiding beschrijft hoe je een GitHub Account maakt, hoe je GitHub Desktop Client installeert en gebruikt, hoe je een Respec mappenstructuur opbouwt, welke bestanden er nodig zijn voor een standaard, en hoe je de verschillende versies van een standaard genereert. Ook wordt uitgelegd hoe je de Markdown plugin in Microsoft Word installeert en gebruikt.</p>
-<h2 id="leeswijzer">Leeswijzer</h2>
-<p>In de menubalk aan de bovenkant zie je de verschillende onderwerpen die in deze documentatie behandeld worden. Van sommige van die onderwerpen zijn nog subonderwerpen beschreven. Kies een onderwerp en in de linkermenubalk verschijnt een hoofdstukindeling. Ook is er zoekfunctie.</p>
-<h2 id="bijhouden">Bijhouden</h2>
-<p>Deze handleiding is als HTML gepubliceerd op: https://geonovum.github.io/handleiding-tooling/ om deze up to date te houden kun je in een linux omgeving in de root folder van het repository het commando</p>
-<pre><code>mkdocs gh-deploy
-</code></pre></div>
+<h1 id="subversion">Subversion</h1>
+<p>Subversion is een versiebeheersysteem vergelijkbaar met GitHub. Echter binnen de UML modelleertool Enterprise Architect kun je GitHub niet gebruiken dus gebruiken we daar Subversion.</p>
+<h2 id="installeren-van-subversion-in-enterprise-architect">Installeren van Subversion in Enterprise Architect</h2>
+<p>Wanneer een UML model in subversion beheerd is dan kun je deze als volgt op je eigen computer gebruiken.
+ - Installeer een SVN client tool waar een command line verise bij zit
+     - Installeer <a href="https://sliksvn.com/download/">sliksvn</a>
+     - Vroeger was het advies om tortoiseSVN te installeren (https://tortoisesvn.net). Deze bevat geen command line variant meer maar nog wel een mooie GUI die in de instructies hieronder gebruikt wordt.
+ - Zorg voor een Geonovum svn account. Dit kun je aanvragen bij Wilko Quak of als hij niet beschikbaar is rechtstreeks bij Rob Kaesehagen die de server beheert.
+ - Voor projectX die gebruik maakt van de subversion map svn.geostandaarden.nl/ProjectX:
+     - Maak een folder op je lokale systeem: WerkmapProjectX
+     - Maak een subfolder svn.
+     - Maak een nieuw EA project ProjectX.eapx in je werkmap.
+     - Klik met je rechtermuistoets op deze folder en kies SVN Checkout
+     - Er verschijnt een Checkout dialoog. Vul als URL in svn://svn.geostandaarden.nl/IMGeluid en als output directory de folder die je net hebt aangemaakt. Kies de settings zoals hieronder weergegeven: </p>
+<p><img alt="svncheckout" src="../media/svncheckout.png" /></p>
+<ul>
+<li>Configureer version control in EA<ul>
+<li>Kies uit het menu (de ribbon bovenin EA) Configure &gt; Settings. Het Version Control Settings dialoogvenster verschijnt. Vul dit zoals hieronder in en klik dan op Save.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="version control settings" src="../media/VersionControlSettings.png" /></p>
+<ul>
+<li>Breng nu elk van de packages, op het niveau waarop je ze wilt kunnen in- en uitchecken, onder versiebeheer.<ul>
+<li>Selecteer het tabblad Configure (bovenin) en klik op Package Configuration)</li>
+<li>Vul het Package Control Options dialoog in zoals hieronder (XMI Filename kan anders zijn, afhankelijk van hoe de packages zijn ingedeeld) en klik OK.<ul>
+<li>Selecteer bij Version Control het voorgestelde path </li>
+<li>Kies ‘Include sub-packages’ als je wilt dat alle sub-packages in hetzelfde XMI bestand beheerd worden en dus geen eigen slotje krijgen.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="package control options" src="../media/PackageControlOptions.png" /></p>
+<ul>
+<li>Elk van de packages die in SVN zijn ondergebracht, hebben nu in EA een slotje. Je kunt de inhoud van het model dat in zo'n package staat niet zomaar meer wijzigen. </li>
+</ul>
+<p><img alt="package overview" src="../media/PackageOverview.png" /></p>
+<ul>
+<li>
+<p>Om aan een package te werken, check je het eerst uit. Klik met de rechtermuistoets op het package, kies Package Control &gt; Check Out… (gebruik NIET "check out branch", dat is om met parallelle versies te werken, doen wij niet). Subversion haalt nu de laatste versie van het package voor je op en haalt het slotje voor je eraf. Een ander persoon kan niet tegelijkertijd aan dit package werken, maar het wel bekijken.</p>
+</li>
+<li>
+<p>Als je klaar bent met je werk, of je stopt er voor vandaag mee, check je het package weer in. Klik met de rechtermuistoets op het package, kies Package Control &gt; Check In… (gebruik NIET "check in branch", dat is om met parallelle versies te werken, doen wij niet).</p>
+</li>
+<li>
+<p>Andere handige commando's:</p>
+<ul>
+<li>
+<p>Put Latest &gt; Tussentijds wijzigingen naar de SVN server sturen</p>
+</li>
+<li>
+<p>Get Latest &gt; Laatste wijzigingen van de SVN server ophalen zodat je ze kan zien, zonder te willen uitchecken.</p>
+</li>
+</ul>
+</li>
+</ul></div>
             </div>
         </div>
 
